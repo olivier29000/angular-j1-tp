@@ -1,0 +1,20 @@
+<div class="employee-list">
+  <h2>Liste des employés actifs</h2>
+  
+      <app-employe-actif-line *ngFor="let emp of employeListActived"
+      [employe]="emp"
+      (archiveOutput)="archive($event)"
+      (displayOutput)="display($event)">
+        
+      </app-employe-actif-line>
+    
+</div>
+<div class="employee-list">
+  <h2>Liste des employés archivés</h2>
+      <app-employe-archived-line *ngFor="let emp of employeListArchived"
+      [employe]="emp"
+      (activeOutput)="active($event)"
+      (displayOutput)="display($event)">
+      </app-employe-archived-line>
+   
+</div>
