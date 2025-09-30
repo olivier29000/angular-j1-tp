@@ -9,6 +9,7 @@ import { EmployeArchivedLineComponent } from './employe-archived-line/employe-ar
 import { ButtonDisplayComponent } from './ui/button-display/button-display.component';
 import { ButtonArchiveComponent } from './ui/button-archive/button-archive.component';
 import { ButtonActiveComponent } from './ui/button-active/button-active.component';
+import { ButtonDeleteComponent } from './ui/button-delete/button-delete.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ButtonActiveComponent } from './ui/button-active/button-active.componen
     EmployeArchivedLineComponent,
     ButtonDisplayComponent,
     ButtonArchiveComponent,
-    ButtonActiveComponent
+    ButtonActiveComponent,
+    ButtonDeleteComponent
   ],
   imports: [
     BrowserModule,

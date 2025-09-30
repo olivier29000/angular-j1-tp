@@ -14,7 +14,8 @@
       <app-employe-archived-line *ngFor="let emp of employeListArchived"
       [employe]="emp"
       (activeOutput)="active($event)"
-      (displayOutput)="display($event)">
+      (displayOutput)="display($event)"
+      (deleteOutput)="delete($event)">
       </app-employe-archived-line>
    
 </div>

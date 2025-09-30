@@ -11,11 +11,16 @@ export class EmployeArchivedLineComponent {
   @Input() employe! :Employe;
   @Output() displayOutput = new EventEmitter<Employe>(); 
   @Output() activeOutput = new EventEmitter<Employe>(); 
+  @Output() deleteOutput = new EventEmitter<Employe>(); 
 
    display() : void {
     this.displayOutput.emit(this.employe)
   }
   active() : void {
     this.activeOutput.emit(this.employe)
+  }
+
+  delete() : void {
+    this.deleteOutput.emit(this.employe)
   }
 }

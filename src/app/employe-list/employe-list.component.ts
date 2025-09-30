@@ -19,6 +19,10 @@ export class EmployeListComponent {
     this.employeListActived.push(employe)
   }
 
+  delete(employe : Employe) : void {
+    this.employeListArchived = this.employeListArchived.filter(e => e.id !== employe.id)
+  }
+
   display(employe : Employe) : void {
     Swal.fire({
       title: `<strong>${employe.poste}</strong>`,
