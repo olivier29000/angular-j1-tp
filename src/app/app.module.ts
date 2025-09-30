@@ -12,6 +12,8 @@ import { ButtonActiveComponent } from './ui/button-active/button-active.componen
 import { ButtonDeleteComponent } from './ui/button-delete/button-delete.component';
 import { EmployeFormComponent } from './ui/employe-form/employe-form.component';
 import { FormsModule } from '@angular/forms';
+import { MaLogiqueMetierService } from './services/ma-logique-metier.toto';
+import { EmployeListOldWayComponent } from './employe-list-old-way/employe-list-old-way.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     ButtonArchiveComponent,
     ButtonActiveComponent,
     ButtonDeleteComponent,
-    EmployeFormComponent
+    EmployeFormComponent,
+    EmployeListOldWayComponent
   ],
   imports: [
     BrowserModule,
