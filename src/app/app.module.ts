@@ -10,6 +10,8 @@ import { ButtonDisplayComponent } from './ui/button-display/button-display.compo
 import { ButtonArchiveComponent } from './ui/button-archive/button-archive.component';
 import { ButtonActiveComponent } from './ui/button-active/button-active.component';
 import { ButtonDeleteComponent } from './ui/button-delete/button-delete.component';
+import { EmployeFormComponent } from './ui/employe-form/employe-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { ButtonDeleteComponent } from './ui/button-delete/button-delete.componen
     ButtonDisplayComponent,
     ButtonArchiveComponent,
     ButtonActiveComponent,
-    ButtonDeleteComponent
+    ButtonDeleteComponent,
+    EmployeFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

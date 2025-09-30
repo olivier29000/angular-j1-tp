@@ -9,6 +9,14 @@ import Swal from 'sweetalert2';
 })
 export class EmployeListComponent {
 
+  addEmploye(employe : Employe) : void {
+    const idList = this.employeListActived.concat(this.employeListActived)
+      .map(e => e.id)
+
+    const id = Math.max(...idList) + 1
+    this.employeListActived.push({...employe, id})
+  }
+
   archive(employe : Employe) : void {
     this.employeListActived = this.employeListActived.filter(e => e.id !== employe.id)
     this.employeListArchived.push(employe)
